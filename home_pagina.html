@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    <title>Tienda de Café</title>
+    <link rel="stylesheet" href="home_pagina.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <aside style="display: flex; align-items: center;">
+                    <model-viewer src="cafe/scene.gltf" auto-rotate camera-controls ar ios-src style="width: 50px; height: 50px;"></model-viewer>
+                    <span style="margin-left: 10px; font-size: 1rem; color: white;">Café Aroma</span>
+                </aside>
+            </div>
+            <nav class="menu">
+                <a href="#productos">Productos</a>
+                <a href="#sobre-nosotros">Sobre Nosotros</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+            <form class="search-form" action="#" method="GET">
+                <input type="text" placeholder="Buscar..." name="search" class="search-input">
+                <button type="submit" class="search-btn">Buscar</button>
+            </form>
+            <div class="login">
+                <a href="login.html" class="login-btn">Iniciar Sesión</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="banner-content">
+            <h1>Bienvenido a Café Aroma</h1>
+            <p>Descubre los mejores sabores del café, directamente a tu taza.</p>
+            <a href="#productos" class="banner-btn">Explorar Productos</a>
+        </div>
+    </section>
+
+    <section id="productos" class="productos">
+        <div class="container">
+            <h2>Nuestros Productos</h2>
+            <div class="product-list">
+                <div class="product">
+                    <img src="images/cafe1.jpg" alt="Café 1">
+                    <h3>Café de origen</h3>
+                    <p>Un sabor auténtico desde las mejores fincas.</p>
+                </div>
+                <div class="product">
+                    <img src="images/cafe2.jpg" alt="Café 2">
+                    <h3>Café Espresso</h3>
+                    <p>Perfecto para disfrutar en cualquier momento.</p>
+                </div>
+                <div class="product">
+                    <img src="images/cafe3.jpg" alt="Café 3">
+                    <h3>Café Molido</h3>
+                    <p>Molido fresco para tu cafetera en casa.</p>
+                </div>
+                <div class="product">
+                    <img src="images/cafe4.jpg" alt="Café 4">
+                    <h3>Café Orgánico</h3>
+                    <p>Café cultivado sin pesticidas, para los amantes de lo natural.</p>
+                </div>
+                <div class="product">
+                    <img src="images/cafe5.jpg" alt="Café 5">
+                    <h3>Café Descafeinado</h3>
+                    <p>El mismo sabor intenso sin el efecto de la cafeína.</p>
+                </div>
+                <div class="product">
+                    <img src="images/cafe6.jpg" alt="Café 6">
+                    <h3>Café en Cápsulas</h3>
+                    <p>La comodidad de un café rápido y delicioso en cápsulas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre-nosotros" class="sobre-nosotros">
+        <div class="container">
+            <h2>Sobre Nosotros</h2>
+            <div class="sobre-nosotros-content">
+                <p>En Café Aroma, nos enorgullecemos de ofrecer los mejores granos de café de origen sustentable. Nuestro equipo está comprometido con la calidad y con traer el auténtico sabor del café a tu taza.</p>
+                <img src="images/sobre-nosotros.jpg" alt="Sobre Nosotros">
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p>Si tienes alguna pregunta, no dudes en contactarnos. Estaremos encantados de ayudarte.</p>
+            <form class="contact-form" action="#" method="POST">
+                <input type="text" placeholder="Nombre" name="name" required class="contact-input">
+                <input type="email" placeholder="Correo Electrónico" name="email" required class="contact-input">
+                <textarea placeholder="Mensaje" name="message" required class="contact-textarea"></textarea>
+                <button type="submit" class="contact-btn">Enviar</button>
+            </form>
+            <div class="social-links">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Café Aroma. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

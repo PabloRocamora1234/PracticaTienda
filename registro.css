@@ -1,0 +1,90 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('images/imagen_cafeteria2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.registro-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    transition: transform 0.3s;
+}
+
+.registro-container:hover {
+    transform: translateY(-5px);
+}
+
+.registro-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4A2C2A;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #4A2C2A;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #e7790b;
+    outline: none;
+    box-shadow: 0 0 5px rgba(227, 126, 1, 0.5);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #e7790b, #d36c05);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.submit-btn:hover {
+    background: linear-gradient(90deg, #e7790b, #d36c05);
+    transform: translateY(-3px);
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer p {
+    font-size: 0.9rem;
+}
+
+.footer .link {
+    color: #e7790b;
+    text-decoration: none;
+}
+
+.footer .link:hover {
+    text-decoration: underline;
+}
