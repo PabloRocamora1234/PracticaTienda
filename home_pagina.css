@@ -6,7 +6,7 @@ body {
     box-sizing: border-box;
 }
 
-/* Estilo de la barra de navegación */
+
 .navbar {
     background-color: transparent;
     color: white;
@@ -27,17 +27,17 @@ body {
 
 .logo a {
     text-decoration: none;
-    font-size: 1rem; /* Tamaño del texto */
-    font-weight: bold; /* Peso del texto */
-    color: white; /* Color del texto */
-    display: flex; /* Para alinear la imagen y el texto en línea */
-    align-items: center; /* Centra verticalmente el texto respecto a la imagen */
+    font-size: 1rem;
+    font-weight: bold; 
+    color: white; 
+    display: flex; 
+    align-items: center; 
 }
 
 .logo model-viewer {
-    width: 50px; /* Ajustar tamaño del modelo */
-    height: 50px; /* Ajustar tamaño del modelo */
-    margin-right: 10px; /* Espacio entre el modelo y el texto */
+    width: 50px; 
+    height: 50px;
+    margin-right: 10px;
 }
 
 .menu {
@@ -53,7 +53,7 @@ body {
 }
 
 .menu a:hover {
-    color: #e7790b; /* Color al pasar el mouse */
+    color: #e7790b;
 }
 
 .search-form {
@@ -112,14 +112,14 @@ body {
     margin-top: 100px;
 }
 
-/* Estilo para el título de productos */
+
 .productos h2 {
-    font-size: 2.8rem; /* Tamaño del texto */
-    color: #4A2C2A; /* Color del texto */
-    margin-bottom: 30px; /* Espacio inferior */
-    text-transform: uppercase; /* Transformar a mayúsculas */
-    letter-spacing: 1px; /* Espaciado entre letras */
-    text-align: center; /* Alineación centrada */
+    font-size: 2.8rem; 
+    color: #4A2C2A; 
+    margin-bottom: 30px; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+    text-align: center;
 }
 
 .product-list {
