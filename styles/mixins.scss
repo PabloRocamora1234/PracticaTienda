@@ -1,0 +1,90 @@
+// Mixin para la navegación
+@mixin navbar($bg: $navbar-bg, $color: $navbar-color) {
+    background-color: $bg;
+    color: $color;
+    padding: 15px 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: none;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo a {
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: bold; 
+        color: $color; 
+        display: flex; 
+        align-items: center; 
+    }
+
+    .menu {
+        display: flex;
+        gap: 20px;
+
+        a {
+            color: $color;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: $highlight-color;
+            }
+        }
+    }
+}
+
+// Mixin para el pie de página
+@mixin footer($bg: $footer-bg, $color: $footer-color) {
+    padding: 20px;
+    background-color: $bg;
+    color: $color;
+    text-align: center;
+}
+
+// Mixin para la sección Sobre Nosotros
+@mixin sobre-nosotros {
+    padding: 60px 20px;
+    background-color: #f9f6f1;
+    text-align: left;
+    border-top: 2px solid #d3c5b2;
+    border-bottom: 2px solid #d3c5b2;
+
+    h2 {
+        font-size: 2.8rem;
+        color: #4A2C2A;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    .sobre-nosotros-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+
+        p {
+            font-size: 1.2rem;
+            color: #6E4F3A;
+            line-height: 1.8;
+            max-width: 600px;
+        }
+
+        img {
+            width: 50%;
+            max-width: 400px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+    }
+}
